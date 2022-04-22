@@ -89,7 +89,7 @@ public class PhonebookService{
     public void test(){
         String valor = null;
 
-        if(valor.equals("Teste"){
+        if(valor.equals("Teste")){
             System.out.println("Passou por aqui");
         }
     }
