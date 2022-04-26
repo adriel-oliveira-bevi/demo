@@ -44,7 +44,7 @@ jobs:
           SONAR_URL: ${{ secrets.SONAR_URL }}
         run: ./codeAnalysis.sh
 
-       - name: 8. Code Analysis - Quality Gate Checking
+      - name: 8. Code Analysis - Quality Gate Checking
         uses: jkumar19/sonar-build-breaker@v1.0.0
         with:
           sonar_branch: master
@@ -52,7 +52,7 @@ jobs:
           sonar_token: ${{ secrets.SONAR_TOKEN }}
           sonar_url: ${{ secrets.SONAR_URL }}
 
-       - name: 9. Libraries Analysis - White-box testing (SAST)
+      - name: 9. Libraries Analysis - White-box testing (SAST)
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         run: ./librariesAnalysis.sh
