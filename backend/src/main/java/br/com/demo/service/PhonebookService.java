@@ -85,12 +85,4 @@ public class PhonebookService{
         
         throw new PhonebookNotFoundException();
     }
-
-    public void test(){
-        String valor = null;
-
-        if(valor.equals("Teste")){
-            System.out.println("Passou por aqui");
-        }
-    }
 }
